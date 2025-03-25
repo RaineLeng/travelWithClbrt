@@ -43,7 +43,7 @@ App特点包括用户画像分析、行程规划、实时定位、AI语音互动
 ### 1. 使用提供的Node.js服务器
 
 ```bash
-# 确保已安装Node.js
+
 node server.js
 ```
 
