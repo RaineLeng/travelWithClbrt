@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行计划 - 名人一起旅行</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- iOS 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="content pb-20">
+            <div class="flex items-center justify-between mb-6">
+                <h1 class="text-xl font-bold">旅行计划</h1>
+                <div class="flex items-center">
+                    <a href="#" class="mr-4">
+                        <i class="fas fa-calendar-alt text-xl text-gray-600"></i>
+                    </a>
+                    <a href="#" class="relative">
+                        <i class="fas fa-bell text-xl text-gray-600"></i>
+                        <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">2</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 顶部标签切换 -->
+            <div class="flex border-b mb-6">
+                <button class="py-2 px-4 border-b-2 border-blue-500 text-blue-500 font-medium">进行中</button>
+                <button class="py-2 px-4 text-gray-500">已完成</button>
+                <button class="py-2 px-4 text-gray-500">收藏</button>
+            </div>
+
+            <!-- 进行中的旅行 -->
+            <div class="card mb-6 relative overflow-hidden">
+                <span class="absolute top-0 right-0 bg-blue-500 text-white px-2 py-1 text-xs">进行中</span>
+                
+                <div class="flex items-center mb-4">
+                    <img src="https://via.placeholder.com/50" alt="鲁迅" class="w-12 h-12 rounded-full mr-3">
+                    <div>
+                        <h2 class="font-semibold text-lg">鲁迅文化之旅</h2>
+                        <p class="text-sm text-gray-500">上海 · 绍兴 · 北京</p>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-sm text-gray-500">已完成 2/5 天</span>
+                        <span class="text-sm text-gray-500">剩余 3 天</span>
+                    </div>
+                    <div class="bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-500 rounded-full h-2 w-2/5"></div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-3 rounded-lg mb-4">
+                    <h3 class="font-medium mb-2">今日行程</h3>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 flex flex-col items-center mr-3">
+                            <span class="text-xs text-gray-500">09:00</span>
+                            <div class="h-14 w-0.5 bg-gray-300 my-1"></div>
+                            <span class="text-xs text-gray-500">11:00</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg shadow-sm flex-1">
+                            <div class="flex justify-between mb-1">
+                                <h4 class="font-medium">鲁迅故居</h4>
+                                <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">已打卡</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mb-2">上海市虹口区山阴路132号</p>
+                            <div class="text-xs text-blue-500">
+                                <i class="fas fa-map-marker-alt mr-1"></i> 查看导览
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start mt-3">
+                        <div class="flex-shrink-0 flex flex-col items-center mr-3">
+                            <span class="text-xs text-gray-500">14:00</span>
+                            <div class="h-14 w-0.5 bg-gray-300 my-1"></div>
+                            <span class="text-xs text-gray-500">16:00</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg shadow-sm flex-1">
+                            <div class="flex justify-between mb-1">
+                                <h4 class="font-medium">鲁迅纪念馆</h4>
+                                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full">未开始</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mb-2">上海市虹口区东江湾路200号</p>
+                            <div class="text-xs text-blue-500">
+                                <i class="fas fa-map-marker-alt mr-1"></i> 查看导览
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between">
+                    <button class="btn py-2 flex-1 mr-2 flex items-center justify-center">
+                        <i class="fas fa-play-circle mr-2"></i> 语音导览
+                    </button>
+                    <button class="btn btn-secondary py-2 flex-1 flex items-center justify-center">
+                        <i class="fas fa-map-marked-alt mr-2"></i> 查看地图
+                    </button>
+                </div>
+            </div>
+
+            <!-- 推荐旅行 -->
+            <div class="mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold">为您推荐</h2>
+                    <a href="#" class="text-blue-500 text-sm">更多</a>
+                </div>
+
+                <div class="overflow-x-auto -mx-4 px-4">
+                    <div class="flex space-x-4 pb-2" style="min-width: max-content;">
+                        <div class="card p-0 w-64">
+                            <img src="https://images.unsplash.com/photo-1517309230475-6736d926b979?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="梵高艺术探索" class="w-full h-32 object-cover rounded-t-lg">
+                            <div class="p-3">
+                                <div class="flex items-center mb-2">
+                                    <img src="https://via.placeholder.com/40" alt="梵高" class="w-8 h-8 rounded-full mr-2">
+                                    <span class="font-medium">梵高艺术探索</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mb-2">阿姆斯特丹 · 巴黎 · 普罗旺斯</p>
+                                <button class="btn py-1 text-sm w-full">开始旅程</button>
+                            </div>
+                        </div>
+
+                        <div class="card p-0 w-64">
+                            <img src="https://images.unsplash.com/photo-1551634979-2b11f8c946fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="莎士比亚文学之旅" class="w-full h-32 object-cover rounded-t-lg">
+                            <div class="p-3">
+                                <div class="flex items-center mb-2">
+                                    <img src="https://via.placeholder.com/40" alt="莎士比亚" class="w-8 h-8 rounded-full mr-2">
+                                    <span class="font-medium">莎士比亚文学之旅</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mb-2">伦敦 · 斯特拉特福德</p>
+                                <button class="btn py-1 text-sm w-full">开始旅程</button>
+                            </div>
+                        </div>
+
+                        <div class="card p-0 w-64">
+                            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="李白诗歌之旅" class="w-full h-32 object-cover rounded-t-lg">
+                            <div class="p-3">
+                                <div class="flex items-center mb-2">
+                                    <img src="https://via.placeholder.com/40" alt="李白" class="w-8 h-8 rounded-full mr-2">
+                                    <span class="font-medium">李白诗歌之旅</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mb-2">安徽 · 湖北 · 四川</p>
+                                <button class="btn py-1 text-sm w-full">开始旅程</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 创建新旅行计划按钮 -->
+            <button class="btn flex items-center justify-center">
+                <i class="fas fa-plus mr-2"></i> 创建新的旅行计划
+            </button>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="tab-bar">
+            <a href="home.html" class="tab">
+                <i class="fas fa-home"></i>
+                <span class="tab-label">首页</span>
+            </a>
+            <a href="travel-plan.html" class="tab active">
+                <i class="fas fa-map-marked-alt"></i>
+                <span class="tab-label">旅行</span>
+            </a>
+            <a href="profile.html" class="tab">
+                <i class="fas fa-user"></i>
+                <span class="tab-label">我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - 名人一起旅行</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- iOS 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="content pb-20">
+            <!-- 顶部搜索栏 -->
+            <div class="flex items-center mb-6">
+                <div class="flex-1 relative">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                    <input type="text" class="input-field pl-10" placeholder="搜索目的地、名人或景点">
+                </div>
+                <a href="#" class="ml-3">
+                    <i class="fas fa-bell text-xl text-gray-600"></i>
+                </a>
+            </div>
+
+            <!-- 欢迎信息 -->
+            <div class="mb-6">
+                <h1 class="text-2xl font-bold mb-1">您好，旅行者</h1>
+                <p class="text-gray-500">今天想和哪位名人一起旅行？</p>
+            </div>
+
+            <!-- 两大核心功能入口 -->
+            <div class="mb-8">
+                <div class="travel-card mb-4">
+                    <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="跟着名人去旅行">
+                    <div class="travel-card-overlay">
+                        <div class="travel-card-title">跟着名人去旅行</div>
+                        <div class="travel-card-subtitle">定制专属文化旅行计划</div>
+                        <button class="btn mt-2 py-2 text-sm">开始定制</button>
+                    </div>
+                </div>
+
+                <div class="travel-card">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="名人带你逛景点">
+                    <div class="travel-card-overlay">
+                        <div class="travel-card-title">名人带你逛景点</div>
+                        <div class="travel-card-subtitle">景区现场语音讲解体验</div>
+                        <button class="btn mt-2 py-2 text-sm">查找景点</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 热门线路推荐 -->
+            <div class="mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold">热门文化线路</h2>
+                    <a href="#" class="text-blue-500 text-sm">查看全部</a>
+                </div>
+
+                <div class="overflow-x-auto -mx-4 px-4">
+                    <div class="flex space-x-4 pb-2" style="min-width: max-content;">
+                        <div class="card p-0 w-64">
+                            <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="鲁迅文化之旅" class="w-full h-32 object-cover rounded-t-lg">
+                            <div class="p-3">
+                                <div class="flex items-center mb-2">
+                                    <img src="https://via.placeholder.com/40" alt="鲁迅" class="w-8 h-8 rounded-full mr-2">
+                                    <span class="font-medium">鲁迅文化之旅</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mb-2">上海 · 绍兴 · 北京</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-blue-500 font-bold">4.9<span class="text-xs text-gray-500 font-normal ml-1">（128评价）</span></span>
+                                    <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full">5天4晚</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card p-0 w-64">
+                            <img src="https://images.unsplash.com/photo-1517309230475-6736d926b979?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="梵高艺术探索" class="w-full h-32 object-cover rounded-t-lg">
+                            <div class="p-3">
+                                <div class="flex items-center mb-2">
+                                    <img src="https://via.placeholder.com/40" alt="梵高" class="w-8 h-8 rounded-full mr-2">
+                                    <span class="font-medium">梵高艺术探索</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mb-2">阿姆斯特丹 · 巴黎 · 普罗旺斯</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-blue-500 font-bold">4.8<span class="text-xs text-gray-500 font-normal ml-1">（95评价）</span></span>
+                                    <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full">7天6晚</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card p-0 w-64">
+                            <img src="https://images.unsplash.com/photo-1551634979-2b11f8c946fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="莎士比亚文学之旅" class="w-full h-32 object-cover rounded-t-lg">
+                            <div class="p-3">
+                                <div class="flex items-center mb-2">
+                                    <img src="https://via.placeholder.com/40" alt="莎士比亚" class="w-8 h-8 rounded-full mr-2">
+                                    <span class="font-medium">莎士比亚文学之旅</span>
+                                </div>
+                                <p class="text-xs text-gray-500 mb-2">伦敦 · 斯特拉特福德</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-blue-500 font-bold">4.7<span class="text-xs text-gray-500 font-normal ml-1">（83评价）</span></span>
+                                    <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full">3天2晚</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 推荐景点 -->
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold">附近的景点讲解</h2>
+                    <a href="#" class="text-blue-500 text-sm">更多</a>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1519226612673-73c0234437ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="故宫博物院" class="w-24 h-24 object-cover">
+                        <div class="p-3 flex-1">
+                            <h3 class="font-medium">故宫博物院</h3>
+                            <p class="text-xs text-gray-500 mb-2">5位名人讲解已上线</p>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-red-500 mr-1 text-xs"></i>
+                                <span class="text-xs text-gray-500">距离您 2.3 公里</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center px-3">
+                            <button class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">听讲解</button>
+                        </div>
+                    </div>
+
+                    <div class="flex bg-white rounded-lg overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1553986782-9f6de60b51b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="颐和园" class="w-24 h-24 object-cover">
+                        <div class="p-3 flex-1">
+                            <h3 class="font-medium">颐和园</h3>
+                            <p class="text-xs text-gray-500 mb-2">3位名人讲解已上线</p>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-red-500 mr-1 text-xs"></i>
+                                <span class="text-xs text-gray-500">距离您 4.8 公里</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center px-3">
+                            <button class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">听讲解</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="tab-bar">
+            <a href="home.html" class="tab active">
+                <i class="fas fa-home"></i>
+                <span class="tab-label">首页</span>
+            </a>
+            <a href="travel-plan.html" class="tab">
+                <i class="fas fa-map-marked-alt"></i>
+                <span class="tab-label">旅行</span>
+            </a>
+            <a href="profile.html" class="tab">
+                <i class="fas fa-user"></i>
+                <span class="tab-label">我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

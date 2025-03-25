@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 名人一起旅行</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- iOS 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="content pb-20">
+            <!-- 顶部个人信息 -->
+            <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="用户头像" class="avatar avatar-lg">
+                    <div class="ml-4">
+                        <h1 class="text-xl font-bold">旅行者小王</h1>
+                        <p class="text-sm text-gray-500">文化旅行爱好者</p>
+                        <div class="flex items-center mt-1">
+                            <span class="badge mr-2">Lv.3 旅行家</span>
+                            <span class="text-xs text-gray-500">ID: 123456</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="settings.html" class="text-gray-400">
+                    <i class="fas fa-cog text-xl"></i>
+                </a>
+            </div>
+
+            <!-- 数据概览 -->
+            <div class="grid grid-cols-4 bg-white rounded-lg p-4 mb-6 shadow-sm">
+                <div class="text-center">
+                    <div class="text-xl font-bold text-blue-500">12</div>
+                    <div class="text-xs text-gray-500">景点打卡</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xl font-bold text-blue-500">5</div>
+                    <div class="text-xs text-gray-500">旅行路线</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xl font-bold text-blue-500">23</div>
+                    <div class="text-xs text-gray-500">收藏</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xl font-bold text-blue-500">78</div>
+                    <div class="text-xs text-gray-500">好友</div>
+                </div>
+            </div>
+
+            <!-- 我的数字徽章 -->
+            <div class="card mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold">我的数字徽章</h2>
+                    <a href="#" class="text-blue-500 text-sm">全部</a>
+                </div>
+                
+                <div class="grid grid-cols-4 gap-2">
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-trophy text-yellow-500 text-xl"></i>
+                        </div>
+                        <p class="text-xs mt-1">文学家</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-paint-brush text-blue-500 text-xl"></i>
+                        </div>
+                        <p class="text-xs mt-1">艺术家</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mx-auto opacity-50">
+                            <i class="fas fa-flask text-gray-400 text-xl"></i>
+                        </div>
+                        <p class="text-xs mt-1 text-gray-400">科学家</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mx-auto opacity-50">
+                            <i class="fas fa-landmark text-gray-400 text-xl"></i>
+                        </div>
+                        <p class="text-xs mt-1 text-gray-400">历史学家</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅行记录 -->
+            <div class="card mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold">我的旅行记录</h2>
+                    <a href="#" class="text-blue-500 text-sm">更多</a>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></div>
+                        <div class="flex-1">
+                            <div class="flex justify-between">
+                                <h3 class="font-medium">鲁迅文化之旅</h3>
+                                <span class="text-xs text-gray-500">2023/10/15</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mb-1">上海 · 绍兴 · 北京</p>
+                            <div class="flex">
+                                <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="" class="w-16 h-16 object-cover rounded mr-1">
+                                <img src="https://images.unsplash.com/photo-1516834611397-8d633eaec5d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="" class="w-16 h-16 object-cover rounded mr-1">
+                                <img src="https://images.unsplash.com/photo-1495562569060-2eec283d3391?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="" class="w-16 h-16 object-cover rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-2"></div>
+                        <div class="flex-1">
+                            <div class="flex justify-between">
+                                <h3 class="font-medium">故宫博物院一日游</h3>
+                                <span class="text-xs text-gray-500">2023/09/20</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mb-1">北京</p>
+                            <div class="flex">
+                                <img src="https://images.unsplash.com/photo-1519226612673-73c0234437ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="" class="w-16 h-16 object-cover rounded mr-1">
+                                <img src="https://images.unsplash.com/photo-1614066882971-9caa2e36af2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="" class="w-16 h-16 object-cover rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 收藏的名人 -->
+            <div class="card">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold">收藏的名人</h2>
+                    <a href="#" class="text-blue-500 text-sm">更多</a>
+                </div>
+
+                <div class="grid grid-cols-5 gap-2">
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/60" alt="鲁迅" class="w-12 h-12 rounded-full mx-auto">
+                        <p class="text-xs mt-1">鲁迅</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/60" alt="梵高" class="w-12 h-12 rounded-full mx-auto">
+                        <p class="text-xs mt-1">梵高</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/60" alt="莎士比亚" class="w-12 h-12 rounded-full mx-auto">
+                        <p class="text-xs mt-1">莎翁</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/60" alt="李白" class="w-12 h-12 rounded-full mx-auto">
+                        <p class="text-xs mt-1">李白</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/60" alt="更多" class="w-12 h-12 rounded-full mx-auto bg-gray-100 flex items-center justify-center">
+                        <p class="text-xs mt-1">更多</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="tab-bar">
+            <a href="home.html" class="tab">
+                <i class="fas fa-home"></i>
+                <span class="tab-label">首页</span>
+            </a>
+            <a href="travel-plan.html" class="tab">
+                <i class="fas fa-map-marked-alt"></i>
+                <span class="tab-label">旅行</span>
+            </a>
+            <a href="profile.html" class="tab active">
+                <i class="fas fa-user"></i>
+                <span class="tab-label">我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
